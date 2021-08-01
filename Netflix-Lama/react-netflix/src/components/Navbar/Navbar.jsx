@@ -1,10 +1,21 @@
 import React from "react";
+import { useState } from "react";
 import "./navbar.scss";
 import { Search, Notifications, ArrowDropDown } from "@material-ui/icons";
 
 export const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  // console.log(window.pageYOffset); 스크롤 확인
+  window.onscroll = () => {
+    // 스크롤 이벤트 발생
+    setIsScrolled(window.pageYOffset === 0 ? false : true);
+    return () => (window.onscroll = null);
+  };
+
+  console.log(isScrolled);
   return (
-    <div className="navbar">
+    <div className={isScrolled ? "navber scrolled" : "navbar"}>
       <div className="container">
         <div className="left">
           <img
