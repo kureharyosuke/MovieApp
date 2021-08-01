@@ -15,7 +15,7 @@ export const Navbar = () => {
 
   console.log(isScrolled);
   return (
-    <div className={isScrolled ? "navber scrolled" : "navbar"}>
+    <div className={isScrolled ? "navbar scrolled" : "navbar"}>
       <div className="container">
         <div className="left">
           <img
