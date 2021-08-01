@@ -1,11 +1,11 @@
 import React from "react";
 import "./index.scss";
-import { AcUnit } from "@material-ui/icons";
+import Navbar from "../Navbar";
 
 export default function Home() {
   return (
     <div className="home">
-      <AcUnit />
+      <Navbar />
     </div>
   );
 }
