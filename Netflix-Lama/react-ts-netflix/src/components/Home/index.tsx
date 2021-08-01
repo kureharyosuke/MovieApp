@@ -4,7 +4,7 @@ import { AcUnit } from "@material-ui/icons";
 
 export default function Home() {
   return (
-    <div>
+    <div className="home">
       <AcUnit />
     </div>
   );

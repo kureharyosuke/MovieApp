@@ -1,11 +1,13 @@
 import React from "react";
-import "./Home.scss";
-import { AcUnit } from "@material-ui/icons";
+import "./home.scss";
+import { Navbar } from "../Navbar/Navbar";
+// import { AcUnit } from "@material-ui/icons";
 
-export default function Home() {
+export const Home = () => {
   return (
-    <div>
-      <AcUnit />
+    <div className="home">
+      {/* <AcUnit /> */}
+      <Navbar />
     </div>
   );
-}
+};
